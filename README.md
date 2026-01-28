@@ -25,6 +25,24 @@ fullstack_pdf2md_transform2tidy/
 │   └── src/
 └── docker-compose.yml
 ```
+## Frontend Workflow
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                    FRONTEND (React/Vite)                             │
+├──────────────────────────────────────────────────────────────────────┤
+│  main.tsx  ──►  App.tsx  ──►  Components                             │
+│     │                │               │                               │
+│     │                │               ├── FileUpload.tsx              │
+│     │                │               ├── ResultsPanel.tsx            │
+│     │                │               ├── MarkdownViewer.tsx          │
+│     │                │               └── CsvViewer.tsx               │
+│     │                │                                               │
+│     │                └────► api/client.ts ────► FastAPI Backend      │
+│     │                                      (192.168.10.188:8000/api) │
+│     │                                                                │
+│     └── styles/ (Tailwind CSS + custom themes)                       │
+└──────────────────────────────────────────────────────────────────────┘
+```
 ## Backend Workflow
 ![logical_flow](images/backend_logical_flow.jpg)
 ## Docker
