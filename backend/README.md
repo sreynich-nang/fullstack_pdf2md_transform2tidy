@@ -39,7 +39,7 @@ By following these steps:
 
 ## Backend Logical Flow
 
-![logical_flow](images\backend_logical_flow.jpg)
+![logical_flow](images\flow_backend.jpg)
 
 ## File-Structure
 
