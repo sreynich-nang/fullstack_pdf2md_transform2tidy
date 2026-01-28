@@ -25,7 +25,8 @@ fullstack_pdf2md_transform2tidy/
 │   └── src/
 └── docker-compose.yml
 ```
-
+## Backend Workflow
+![logical_flow](images/flow_backend.jpg)
 ## Docker
 
 - Check
