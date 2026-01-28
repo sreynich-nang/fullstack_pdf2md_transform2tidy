@@ -27,7 +27,7 @@ fullstack_pdf2md_transform2tidy/
 ```
 
 ## Backend Workflow
-![logical_flow](images\backend_logical_flow.jpg)
+![flow](images\backend_logical_flow.jpg)
 ## Docker
 
 - Check
