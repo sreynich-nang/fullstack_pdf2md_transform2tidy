@@ -10,12 +10,15 @@ services:
     restart: unless-stopped
 
   frontend:
-    build: ./frontend
-    ports:
-      - "5555:5555"
-    volumes:
-      - ./frontend:/app
-    stdin_open: true
-    tty: true
-    depends_on:
-      - backend
+   build: ./frontend
+   ports:
+    - "5555:5555"
+   volumes:
+    - ./frontend:/app
+    - /app/node_modules  # keep container's node_modules
+   stdin_open: true
+   tty: true
+   depends_on:
+    - backend
+   environment:
+    NODE_ENV: development
