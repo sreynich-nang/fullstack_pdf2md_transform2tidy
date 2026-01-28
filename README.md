@@ -42,3 +42,9 @@ fullstack_pdf2md_transform2tidy/
   - Frontend: `http://localhost:5555`
 - Stop the App
   - `docker compose down` or "CTRL + C"
+
+# Limitation
+
+Not all wide-table enable to be transformed to tidy by this pipeline due to LLM limitation working on those errors after Marker did its job which convert from PDF to Markdown. In testing step, among the 10 tables, there a table that is broken which not able to be converted to be Tidy format.
+
+Understand more from the backend side, please refer to `backend` directory :D
