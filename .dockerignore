@@ -1,0 +1,31 @@
+# Python / backend
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.env
+*.sqlite3
+*.log
+
+# Conda / environment
+env/
+.conda/
+.venv/
+*.condarc
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# System files
+.DS_Store
+Thumbs.db
+*.bak
+
+# Docker
+*.tar
+*.tmp
+
+backend/app/services/transform2tidy/.env.transform2tidy

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Conda
+env/
+.conda/
+*.condarc
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+backend/app/services/transform2tidy/.env.transform2tidy
+backend/file_structure.md
+backend/doc.md
+backend/test.ipynb
+backend/README-v1.md
+backend/temp
+backend/logs

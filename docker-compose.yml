@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./frontend:/app
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
