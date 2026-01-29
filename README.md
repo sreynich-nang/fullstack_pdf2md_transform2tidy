@@ -47,6 +47,8 @@ fullstack_pdf2md_transform2tidy/
 ![logical_flow](images/backend_logical_flow.jpg)
 ## Docker
 
+- Don forget to set the api key in the `\backend\app\services\transform2tidy\.env.transform2tidy` or you can export your won api key in the command which is `export LLM_API_KEY="your_api_key_here"`, which you can get the api key from ![link](https://aistudio.google.com/app/api-keys)
+
 - Check
   - `docker --version`
   - `docker compose version`
