@@ -56,6 +56,20 @@ fullstack_pdf2md_transform2tidy/
 - Build and Start the App
   - `docker compose build`
   - `docker compose up`
+  - backend
+    ```docker
+   docker run --gpus all -p 8000:8000 \
+  -v $(pwd)/backend:/app \
+  -v $(pwd)/backend/temp:/app/temp \
+  fullstack_pdf2md_transform2tidy-backend:latest \
+  sh -c "conda run -n TorchMarker uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"```
+  - frontend
+    ```docker
+  docker run -p 5555:5555 \
+  -v $(pwd)/frontend:/app \
+  -v /app/node_modules
+  fullstack_pdf2md_transform2tidy-frontend:latest```
+
 - Visit the browser
   - Backend: `http://localhost:8000` or `http://localhost:8000/docs`
   - Frontend: `http://localhost:5555`
